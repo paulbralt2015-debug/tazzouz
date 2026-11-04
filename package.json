@@ -1,0 +1,23 @@
+{
+  "name": "twins-video-player",
+  "version": "2.0.0",
+  "description": "Twins Video Player 2",
+  "main": "main.js",
+  "author": "Twins",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.twins.videoplayer",
+    "productName": "Twins Video Player 2",
+    "files": ["index.html", "main.js"],
+    "win": { "target": "portable" },
+    "artifactName": "TwinsVideoPlayer2.${ext}"
+  }
+}
